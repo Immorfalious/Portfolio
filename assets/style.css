@@ -40,12 +40,13 @@ html::-webkit-scrollbar-thumb {
   background: var(--main-color);
 }
 
-.main-header {
+.header {
   display: flex;
   position: relative;
   width: 100%;
   padding: 3rem 9%;
   background: rgba(0, 0, 0, 0.7);
+  background-color: var(--second-bg-color);
   filter: drop-shadow(10px);
   justify-content: space-between;
   align-items: center;
@@ -60,7 +61,8 @@ html::-webkit-scrollbar-thumb {
 
 .logo:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 20px 0 var(--main-color);
+  text-shadow: 1px 1px 1px #fffcfca4, 0 0 15px var(--bg-color),
+    0 0 25px var(--main-color);
 }
 
 .navbar a {
@@ -199,5 +201,199 @@ span {
   80%,
   85% {
     width: calc(100% + 8px);
+  }
+}
+
+main {
+  min-height: 100vh;
+  padding: 5rem 2rem 5rem;
+}
+
+.showcase {
+  background: var(--second-bg-color);
+}
+
+.main-header {
+  text-align: center;
+  font-size: 7rem;
+  margin-left: 30vw;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  margin-left: 30vw;
+}
+
+.showcase-container:nth-child(1) {
+  grid-area: mini-project;
+  background-image: url(images/cssorange.jpg);
+  background-size: 100vw;
+}
+
+.showcase-container:nth-child(2) {
+  grid-area: html-refactor;
+  background-image: url(images/orangeuse-1.jpg);
+  background-size: 100vw;
+}
+
+.showcase-container:nth-child(3) {
+  grid-area: comingsoon1;
+  background-image: url(images/comingsoon.jpg);
+  background-size: 100vw;
+}
+
+.showcase-container:nth-child(4) {
+  grid-area: comingsoon2;
+  background-image: url(images/comingsoon-2.jpg);
+  background-size: 100vw;
+}
+
+.showcase-container:nth-child(5) {
+  grid-area: comingsoon3;
+  background-image: url(images/comingsoon.jpg);
+  background-size: 100vw;
+}
+
+.showcase-container:nth-child(-n + 5):hover {
+  background-size: 60vh;
+}
+
+.showcase .showcase-container {
+  position: relative;
+  margin-top: 30px;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.showcase-container {
+  display: flex;
+  flex-wrap: wrap;
+  outline: 3px solid var(--bg-color);
+  min-height: 25vh;
+  transition: all 0.5s ease;
+}
+
+.showcase-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(219, 51, 0, 0.644);
+  border-radius: 10px;
+  position: absolute;
+  top: 30%;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+}
+
+.showcase-header {
+  font-size: 2rem;
+  width: 100%;
+  color: var(--main-color);
+  text-align: center;
+  padding-top: 5px;
+  padding-right: 10px;
+  text-shadow: 2.5px 2px 1px #000000;
+}
+
+.sub-header {
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--main-color);
+  text-shadow: 2.5px 2px 1px #000000;
+  padding: 5px 0px;
+}
+
+.showcase-content p {
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.4;
+  text-shadow: 2.5px 2px 1px #000000;
+  position: relative;
+}
+
+.showcase-container:hover {
+  box-shadow: inset 0px 0px 10px var(--main-color), 0 0 15px var(--main-color),
+    0 0 30px var(--main-color);
+}
+
+@media only screen and (max-width: 1250px) {
+  .hero {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .hero .about h3 {
+    font-size: 3rem;
+  }
+  .hero .about h1 {
+    font-size: 5rem;
+  }
+  .showcase-header {
+    font-size: 1.5rem;
+  }
+  .sub-header {
+    font-size: 1.4rem;
+    padding: 2px 0px;
+  }
+  .showcase-content p {
+    font-size: 1.3rem;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    margin: 0rem 2rem;
+  }
+  .hero .about h3 {
+    font-size: 2.5rem;
+  }
+  .hero .hero-img img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+  .showcase-header {
+    font-size: 1.7rem;
+  }
+  .sub-header {
+    font-size: 1.5rem;
+    padding: 4px 0px;
+  }
+  .showcase-content p {
+    font-size: 1.3rem;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .navbar a {
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .showcase-grid {
+    grid-template-areas:
+      "mini-project mini-project"
+      "html-refactor comingsoon1"
+      "comingsoon2 comingsoon3";
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .showcase-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "mini-project"
+      "html-refactor"
+      "comingsoon1"
+      "comingsoon2"
+      "comingsoon3";
   }
 }
