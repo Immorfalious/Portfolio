@@ -1,3 +1,4 @@
+/* import for font styling */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
@@ -10,24 +11,28 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* reusable color pallette */
 :root {
   --bg-color: #000000;
   --second-bg-color: #121212;
   --text-color: #fff;
-  --main-color: #d82d03;
+  --main-color: rgb(216, 45, 3);
 }
 
+/* text reset */
 html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
 
+/* background pallette and text styling */
 body {
   background: var(--bg-color);
   font-family: "Montserrat", sans-serif;
   color: var(--text-color);
 }
 
+/* Styling for scrollbar */
 html::-webkit-scrollbar {
   width: 0.8rem;
 }
@@ -40,6 +45,7 @@ html::-webkit-scrollbar-thumb {
   background: var(--main-color);
 }
 
+/* header styling and positioning */
 .header {
   display: flex;
   position: relative;
@@ -52,6 +58,7 @@ html::-webkit-scrollbar-thumb {
   align-items: center;
 }
 
+/* logo "immorfalious" styling */
 .logo {
   font-size: 3rem;
   color: var(--main-color);
@@ -59,12 +66,14 @@ html::-webkit-scrollbar-thumb {
   transition: 0.5s ease;
 }
 
+/* logo effects when hovered */
 .logo:hover {
   transform: scale(1.1);
   text-shadow: 1px 1px 1px #fffcfca4, 0 0 15px var(--bg-color),
     0 0 25px var(--main-color);
 }
 
+/* navbar text styling */
 .navbar a {
   font-size: 1.8rem;
   color: var(--text-color);
@@ -74,16 +83,19 @@ html::-webkit-scrollbar-thumb {
   border-bottom: 3px solid transparent;
 }
 
+/* navbar hover effect */
 .navbar a:hover {
   color: var(--main-color);
   border-bottom: 3px solid var(--main-color);
 }
 
+/* section adjuster for page spacing */
 section {
   min-height: 100vh;
   padding: 5rem 9% 5rem;
 }
 
+/* positioning for image */
 .hero {
   display: flex;
   justify-content: center;
@@ -92,6 +104,7 @@ section {
   background-color: var(--bg-color);
 }
 
+/* styling for image */
 .hero-img img {
   position: relative;
   width: 32vw;
@@ -100,44 +113,46 @@ section {
     0 0 50px var(--main-color);
 }
 
+/* font adjustments for heading*/
 .hero .about h1 {
   font-size: 6rem;
   font-weight: 700;
   line-height: 1.3;
 }
 
+/* styling for font */
 span {
   color: var(--main-color);
 }
 
+/* font adjustment for subheading */
 .about h3 {
   font-size: 4rem;
   margin-bottom: 1.2rem;
   font-weight: 700;
 }
 
+/* font adjustments for about me description */
 .about p {
   font-size: 1.7rem;
   font-weight: 400;
   line-height: 1.5;
-}
-
-.type-text {
-  font-size: 34px;
-  font-weight: 600;
   min-width: 280px;
 }
 
+/* made relative for effects */
 .type-text span {
   position: relative;
 }
 
+/* assign animation and initial content */
 .type-text span::before {
   content: "Dedicated Leaner";
   color: var(--main-color);
   animation: words 20s infinite;
 }
 
+/* assign position and styling effects */
 .type-text span::after {
   content: "";
   position: absolute;
@@ -149,12 +164,14 @@ span {
   animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
 
+/* added cursor styling */
 @keyframes cursor {
   to {
     border-left: 2px solid var(--main-color);
   }
 }
 
+/* keyframes used for effect timing */
 @keyframes words {
   0%,
   20% {
@@ -204,29 +221,36 @@ span {
   }
 }
 
+/* positioned for child elements hidden overflow for excess content */
 main {
   min-height: 100vh;
-  padding: 5rem 2rem 5rem;
+  padding: 2rem 6rem 4rem 2rem;
+  overflow: hidden;
+  position: relative;
 }
 
+/* background color change */
 .showcase {
   background: var(--second-bg-color);
 }
 
+/* font styling and positioning */
 .main-header {
   text-align: center;
   font-size: 7rem;
-  margin-left: 30vw;
+  margin-left: 34vw;
 }
 
+/* created grid layout for showcase */
 .showcase-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2.5rem;
-  margin-left: 30vw;
+  margin-left: 34vw;
 }
 
+/* assigned grid areas and added images/positioning */
 .showcase-container:nth-child(1) {
   grid-area: mini-project;
   background-image: url(images/cssorange.jpg);
@@ -257,27 +281,34 @@ main {
   background-size: 100vw;
 }
 
+/* added zoom effect on hover */
 .showcase-container:nth-child(-n + 5):hover {
   background-size: 60vh;
 }
 
+/* change position type for children element, added styling and blocked image overflow */
 .showcase .showcase-container {
   position: relative;
   margin-top: 30px;
   background-color: var(--bg-color);
   border-radius: 10px;
-  padding: 40px;
   overflow: hidden;
 }
 
+/* added outline and transition timer for styling height change for section positioning*/
 .showcase-container {
-  display: flex;
-  flex-wrap: wrap;
   outline: 3px solid var(--bg-color);
   min-height: 25vh;
   transition: all 0.5s ease;
 }
 
+/* hover effect around border */
+.showcase-container:hover {
+  box-shadow: inset 0px 0px 10px var(--main-color), 0 0 15px var(--main-color),
+    0 0 30px var(--main-color);
+}
+
+/* created box and positioned for showcase text */
 .showcase-content {
   background-color: rgba(0, 0, 0, 0.7);
   border: 2px solid rgba(219, 51, 0, 0.644);
@@ -289,6 +320,7 @@ main {
   right: 0;
 }
 
+/* font styling and positioning for header */
 .showcase-header {
   font-size: 2rem;
   width: 100%;
@@ -299,6 +331,7 @@ main {
   text-shadow: 2.5px 2px 1px #000000;
 }
 
+/* font styling and positioning for sub header */
 .sub-header {
   font-size: 1.6rem;
   text-align: center;
@@ -307,22 +340,213 @@ main {
   padding: 5px 0px;
 }
 
+/* font styling and positioning for description */
 .showcase-content p {
   font-size: 1.3rem;
   text-align: center;
   line-height: 1.4;
   text-shadow: 2.5px 2px 1px #000000;
+}
+
+/* grid adjustments for mobile layout */
+@media only screen and (min-width: 992px) {
+  .showcase-grid {
+    grid-template-areas:
+      "mini-project mini-project"
+      "html-refactor comingsoon1"
+      "comingsoon2 comingsoon3";
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .showcase-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "mini-project"
+      "html-refactor"
+      "comingsoon1"
+      "comingsoon2"
+      "comingsoon3";
+  }
+}
+
+/* height adjustment */
+.timeline section {
+  min-height: auto;
+}
+
+/* positioned to parent and styling for border */
+.education {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 45vw;
+  padding: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(0, 0, 0, 1) 65%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  border: 20px solid rgb(168, 28, 10);
+  margin-bottom: 1rem;
+  margin-right: 65%;
+}
+
+/* Set timeline header properties */
+.timeline-header {
+  font-size: 6rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.education .timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background: rgba(148, 44, 13, 0.7);
+  top: 13%;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 2;
+}
+
+/* positioning for seperate boxes */
+.education .time-container {
+  padding: 10px 40px 10px 20px;
   position: relative;
+  background-color: inherit;
+  width: 50%;
 }
 
-.showcase-container:hover {
-  box-shadow: inset 0px 0px 10px var(--main-color), 0 0 15px var(--main-color),
-    0 0 30px var(--main-color);
+/* added icon from linked source, adjusted style and position */
+.education .time-container::after {
+  content: "\f501";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  right: -17px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 4px solid var(--main-color);
+  top: 15px;
+  z-index: 100;
+  font-size: 1.89rem;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Font Awesome\ 5 Free";
+  color: rgb(119, 1, 1);
 }
 
+/* positioning for left sided boxes */
+.education .left {
+  left: 0;
+}
+
+/* position for last left box */
+.education .left:last-child {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+/* positioning for right sided box */
+.education .right {
+  padding: 10px 20px 10px 40px;
+  position: absolute;
+  left: 50%;
+  bottom: 40%;
+}
+
+/* added indentation towards icon */
+.education .left::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--main-color);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--main-color);
+}
+
+.education .right::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--main-color);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--main-color) transparent transparent;
+}
+
+/* Icon positioning */
+.right::after {
+  left: -16px;
+}
+
+/* added box styling */
+.timeline-content {
+  background: var(--main-color);
+  position: relative;
+  border-radius: 6px;
+}
+
+/* font styling */
+.timeline-subheader {
+  padding: 5px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px #000000;
+  text-align: center;
+  transition: all 0.5 ease;
+}
+
+/* ensuring style is kept after link is clicked */
+.timeline-subheader a:visited {
+  text-decoration: none;
+  color: #c4c4c4;
+}
+
+/* Added hover effect */
+.timeline-subheader a:hover {
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 3px solid var(--bg-color);
+}
+
+/* Font styling */
+.timeline-desc p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #c4c4c4;
+  text-shadow: 1px 1px 8px #070000;
+  text-align: center;
+  line-height: 1.5;
+  padding: 2px 0;
+}
+
+/* added border to divide education text */
+.timeline-desc {
+  border-top: 2px dashed #000000;
+}
+
+/* began fine tuning mobile layout */
 @media only screen and (max-width: 1250px) {
   .hero {
     gap: 2rem;
+  }
+  .education .right {
+    bottom: 30%;
   }
 }
 
@@ -343,6 +567,22 @@ main {
   .showcase-content p {
     font-size: 1.3rem;
     line-height: 1.2;
+  }
+  .timeline-header {
+    font-size: 5rem;
+  }
+  .showcase-grid {
+    margin-left: 45vw;
+  }
+  .main-header {
+    margin-left: 45vw;
+  }
+  .education {
+    margin-right: 55%;
+    max-width: 44vw;
+  }
+  main {
+    padding-right: 3rem;
   }
 }
 
@@ -365,9 +605,18 @@ main {
     font-size: 1.5rem;
     padding: 4px 0px;
   }
+  .education .timeline::after {
+    top: 7%;
+  }
   .showcase-content p {
     font-size: 1.3rem;
     line-height: 1.2;
+  }
+  .timeline-header {
+    font-size: 4rem;
+  }
+  main {
+    padding: 1rem 1rem 1rem;
   }
 }
 
@@ -375,25 +624,18 @@ main {
   .navbar a {
     margin-left: 1rem;
   }
-}
-
-@media only screen and (min-width: 992px) {
-  .showcase-grid {
-    grid-template-areas:
-      "mini-project mini-project"
-      "html-refactor comingsoon1"
-      "comingsoon2 comingsoon3";
+  .timeline-header {
+    font-size: 3rem;
   }
-}
-
-@media only screen and (max-width: 992px) {
+  .main-header {
+    font-size: 5rem;
+    margin-left: 50vw;
+  }
   .showcase-grid {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "mini-project"
-      "html-refactor"
-      "comingsoon1"
-      "comingsoon2"
-      "comingsoon3";
+    margin-left: 50vw;
+  }
+  .education {
+    max-width: 49vw;
+    margin-right: 50%;
   }
 }
