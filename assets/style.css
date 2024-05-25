@@ -524,6 +524,9 @@ main {
   text-align: center;
 }
 
+.timeline-subheader a {
+  color: #c4c4c4;
+}
 /* ensuring style is kept after link is clicked */
 .timeline-subheader a:visited {
   text-decoration: none;
