@@ -10,15 +10,16 @@ Here is a link to the deployed site: https://immorfalious.github.io/Portfolio/
 
 Below is a gif of the portfolios functionality
 
-![portfoliogif](https://github.com/Immorfalious/Portfolio/assets/167267794/3f620faa-1892-4da5-9816-840f80353047)
+![portfoliogif2](https://github.com/Immorfalious/Portfolio/assets/167267794/5b747b3b-e0f1-45cf-b31e-ce1da6c4918b)
 
 Below is a screen shot of the sites layout
 
-![Screenshot 2024-05-24 184001](https://github.com/Immorfalious/Portfolio/assets/167267794/bbea3c7b-5b91-4461-9b67-f1a55d3cd969)
+![Screenshot 2024-05-24 203618](https://github.com/Immorfalious/Portfolio/assets/167267794/0d048258-f0c5-4bec-85b0-18db835f5d5f)
 ##
-![Screenshot 2024-05-24 184008](https://github.com/Immorfalious/Portfolio/assets/167267794/5c600635-fee5-4cf5-b813-85f40d4d7c55)
+![Screenshot 2024-05-24 203623](https://github.com/Immorfalious/Portfolio/assets/167267794/d208cc66-3bbf-4235-a427-56d3654dd83f)
 ##
-![Screenshot 2024-05-24 184013](https://github.com/Immorfalious/Portfolio/assets/167267794/eb825e0c-a1e5-4afe-8272-f35880c092d1)
+![Screenshot 2024-05-24 203626](https://github.com/Immorfalious/Portfolio/assets/167267794/3a775607-53c6-46f3-83b7-e753d72b4299)
+
 
 ## Installation
 
