@@ -15,7 +15,9 @@ Below is a gif of the portfolios functionality
 Below is a screen shot of the sites layout
 
 ![Screenshot 2024-05-24 184001](https://github.com/Immorfalious/Portfolio/assets/167267794/bbea3c7b-5b91-4461-9b67-f1a55d3cd969)
+
 ![Screenshot 2024-05-24 184008](https://github.com/Immorfalious/Portfolio/assets/167267794/5c600635-fee5-4cf5-b813-85f40d4d7c55)
+
 ![Screenshot 2024-05-24 184013](https://github.com/Immorfalious/Portfolio/assets/167267794/eb825e0c-a1e5-4afe-8272-f35880c092d1)
 
 ## Installation
