@@ -645,7 +645,7 @@ main {
     font-size: 3rem;
   }
   .timeline-subheader {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .main-header {
     font-size: 5rem;
@@ -659,7 +659,6 @@ main {
     margin-right: 50%;
   }
 }
-
 /* redefining footer section height */
 footer section {
   min-height: auto;
@@ -757,6 +756,9 @@ footer h1 {
   }
   section.social {
     padding: 2rem 3% 2rem;
+  }
+  .left::before {
+    right: 31px;
   }
 }
 
