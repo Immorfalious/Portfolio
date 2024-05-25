@@ -6,7 +6,7 @@ This challenge was designated during Module-2 of the EdX coding bootcamp. The go
 
 ## Deployment 
 
-Here is a link to the deployed site: 
+Here is a link to the deployed site: https://immorfalious.github.io/Portfolio/
 
 Below is a gif of the portfolios functionality
 
