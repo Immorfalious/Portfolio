@@ -2,17 +2,17 @@
 
 ## Description
 
-This challenge was designated during Module-2 of the EdX coding bootcamp. The goal was to create a portfolio design using HTML/CSS. Within the portfolio you will find links that refer to aspects of my work/life.
+This challenge was designated during Module 2 of the EdX coding boot camp. The goal was to create a portfolio design using HTML/CSS. Within the portfolio, you will find links to aspects of my work/life.
 
 ## Deployment 
 
 Here is a link to the deployed site: https://immorfalious.github.io/Portfolio/
 
-Below is a gif of the portfolios functionality
+Below is a gif of the portfolio functionality
 
 ![portfoliogif2](https://github.com/Immorfalious/Portfolio/assets/167267794/5b747b3b-e0f1-45cf-b31e-ce1da6c4918b)
 
-Below is a screen shot of the sites layout
+Below is a screenshot of the site layout
 
 ![Screenshot 2024-05-24 203618](https://github.com/Immorfalious/Portfolio/assets/167267794/0d048258-f0c5-4bec-85b0-18db835f5d5f)
 ##
@@ -31,8 +31,8 @@ Used to demonstrate my ability to create a functioning portfolio/website layout.
 
 ## Credits
 
-UTSA Bootcamp TA Gerard Mennella
 
-## Lisence
+
+## License
 
 None
