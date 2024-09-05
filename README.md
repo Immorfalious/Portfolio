@@ -1,8 +1,7 @@
 # Immorfalious | Portfolio!
 
 ## Description
-
-This challenge was designated during Module 2 of the EdX coding boot camp. The goal was to create a portfolio design using HTML/CSS. Within the portfolio, you will find links to aspects of my work/life.
+Within this portfolio, you will find learning projects I have been a part of (and more to come) as well as a timeline of my educational experience.
 
 ## Deployment 
 
